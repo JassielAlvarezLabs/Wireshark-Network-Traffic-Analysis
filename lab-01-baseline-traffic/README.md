@@ -14,7 +14,7 @@ I started a Wireshark capture on Computer A ('JayPC' , 192.168.40.142), browsed 
 ```
 ip.addr == 192.168.50.142
 ```
-This shows only Computer A's traffic.
+This display filter shows only Computer A's traffic.
 
 ---
  
