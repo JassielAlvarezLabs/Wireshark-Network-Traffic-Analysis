@@ -62,3 +62,18 @@ Even though HTTPS is encrypted, the **Client Hello** packet shows the website na
 I found the name **media.licdn.com** and **static.licdn.com** (LinkedIn's content server).
  
 ![TLS server name](screenshots/03-tls-server-name.png)
+
+---
+ 
+## 5. Statistics → Conversations
+This shows who talked to whom, and how much.
+ 
+I used the **IPv4 tab**, which shows one row per server my computer talked to. My computer talked to **45 servers** (72 TCP connections and 32 UDP conversations).
+ 
+My top 3 by **Total Packets**:
+ 
+| Server | Likely owner | Total packets | Duration |
+|---|---|---|---|
+| 209.85.231.177 | Google | 52,840 | ~116 s |
+| 18.64.174.117 | Amazon AWS | 28,078 | ~37 s |
+| 74.125.7.227 | Google | 18,122 | ~115 s |
