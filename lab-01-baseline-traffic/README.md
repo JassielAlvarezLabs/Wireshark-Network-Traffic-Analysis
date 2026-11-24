@@ -59,6 +59,6 @@ tls.handshake.type == 1
 ```
 Even though HTTPS is encrypted, the **Client Hello** packet shows the website name (called the **SNI**, Server Name Indication).
  
-I found the name **media.licdn.com** (LinkedIn's content server).
+I found the name **media.licdn.com** and **static.licdn.com** (LinkedIn's content server).
  
 ![TLS server name](screenshots/03-tls-server-name.png)
