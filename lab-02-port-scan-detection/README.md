@@ -30,4 +30,5 @@ This checks the 1,000 most common ports on Computer A. Because I ran it as admin
 <!-- TODO: list what Nmap found -->
 Nmap found these open ports: 135, 2179, 5357 and 8000
  
-![Nmap scan](screenshots/lab2/01-nmap-scan.png)
+![Nmap scan](screenshots/01-nmap-scan.png)
+
