@@ -44,3 +44,15 @@ ftp 192.168.50.216
 I typed the username `testuser` and password `testpass123`, then typed `bye` to log out.
  
 ![FTP login](screenshots/02-ftp-login.png)
+
+---
+ 
+## 3. Find the Password in Wireshark
+```
+ftp
+```
+FTP in the display filter shows only FTP traffic.
+ 
+In the Info column I found **`PASS testpass123`**. The password was sent in **plain text**, so anyone watching the network can read it.
+ 
+![Cleartext password](screenshots/03-cleartext-password.png)
