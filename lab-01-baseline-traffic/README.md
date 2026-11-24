@@ -28,3 +28,13 @@ DNS (Domain Name System) is how my computer asks for a website's IP address.
 I saw lookups for: Discord.com, Claude.ai, Spotify.com, mozilla.cloudflare-dns.com as im using Firefox as a browser
  
 ![DNS lookups](screenshots/01-dns-lookups.png)
+
+## 3. TCP Handshake
+```
+tcp.flags.syn == 1
+```
+Every TCP (Transmission Control Protocol) connection starts with 3 packets:
+ 
+1. **SYN** – my computer: "I want to connect"
+2. **SYN/ACK** – the server: "OK, ready"
+3. **ACK** – my computer: "Connected"
