@@ -24,3 +24,7 @@ A home lab I built to learn how a SOC analyst reads network traffic. I used two 
 
 ### [Lab 1: Normal Traffic](lab-01-baseline-traffic/)
 I captured 60 seconds of normal browsing to learn what normal looks like: DNS lookups, the TCP handshake, website names in HTTPS traffic, and who my computer talked to the most. I checked the top IPs on AbuseIPDB.
+
+### [Lab 2: Port Scan](lab-02-port-scan-detection/)
+I scanned Computer A with Nmap from Computer B and caught it in Wireshark: one IP sending SYN packets to hundreds of different ports. Nmap found 4 open ports (135, 2179, 5357, 8000).
+**MITRE ATT&CK:** T1046 – Network Service Discovery
