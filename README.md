@@ -67,3 +67,7 @@ Wireshark-Network-Traffic-Analysis/
 Each lab folder has its own README with the steps and findings, and a `screenshots` folder.
  
 ---
+
+## My Other Lab
+ 
+**[SOC Analyst Home Lab (Splunk)](https://github.com/JassielAlvarezLabs/SOC-Analyst-Home-Lab-Splunk)**: investigating Windows events in a SIEM (new admin accounts, failed logins, DNS lookups).
