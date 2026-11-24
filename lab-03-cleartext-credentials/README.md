@@ -56,3 +56,25 @@ FTP in the display filter shows only FTP traffic.
 In the Info column I found **`PASS testpass123`**. The password was sent in **plain text**, so anyone watching the network can read it.
  
 ![Cleartext password](screenshots/03-cleartext-password.png)
+
+---
+ 
+## 4. See the Whole Conversation
+I right-clicked the PASS packet → **Follow → TCP Stream**. It showed the whole login like a chat log:
+
+The username, the password, and the server saying "Login successful" are all readable.
+ 
+![TCP stream](screenshots/04-tcp-stream.png)
+
+## Why This Matters
+- FTP sends usernames and passwords **without encryption**.
+- An attacker on the same network (for example, on public Wi-Fi) can capture them with Wireshark.
+- **The fix:** use encrypted versions like **SFTP** (SSH File Transfer Protocol) or **FTPS** (FTP over TLS), so the password shows up as scrambled data.
+
+---
+ 
+## What I Learned
+- How to set up a simple FTP server for testing
+- How to find a password in plain text with the `ftp` filter
+- How to use Follow → TCP Stream to read a whole conversation
+- Why old protocols like FTP are unsafe and what to use instead.  
