@@ -49,7 +49,7 @@ I ran this about every 10 seconds. Each time, it asks Computer B's web server fo
 ```
 http
 ```
-This shows only HTTP (HyperText Transfer Protocol) traffic.
+This display filter shows only HTTP (HyperText Transfer Protocol) traffic.
  
 To see the time between check-ins, I changed: **View → Time Display Format → Seconds Since Previous Displayed Packet**.
  
