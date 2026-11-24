@@ -72,6 +72,6 @@ Every request had the User-Agent **`curl/8.22.0`**. A real web browser says "Moz
 - A User-Agent that isn't a browser (`curl`)
 - Small requests and responses that are about the same size each time
   
-> **Note:** Real malware often adds random timing, called **jitter**, to look less obvious. The small differences in my lab (9.5–12.5 seconds) show why analysts look for *mostly* regular patterns, not perfect ones.
+**Note:** Real malware often adds random timing, called **jitter**, to look less obvious. The small differences in my lab (9.5–12.5 seconds) show why analysts look for *mostly* regular patterns, not perfect ones.
  
 ---
