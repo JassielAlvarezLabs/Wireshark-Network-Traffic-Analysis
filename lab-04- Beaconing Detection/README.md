@@ -75,3 +75,17 @@ Every request had the User-Agent **`curl/8.22.0`**. A real web browser says "Moz
 **Note:** Real malware often adds random timing, called **jitter**, to look less obvious. The small differences in my lab (9.5–12.5 seconds) show why analysts look for *mostly* regular patterns, not perfect ones.
  
 ---
+ 
+## What a SOC Analyst Would Do
+- **Isolate** the infected computer from the network
+- **Block** the server's IP or domain
+- **Find** the program making the connections
+- **Search** other computers for connections to the same server
+
+---
+ 
+## What I Learned
+- What beaconing is and why malware does it
+- How to measure the time between packets in Wireshark
+- How to spot a non-browser User-Agent
+- What steps a SOC (Security Operations Center) analyst takes after finding beaconing
