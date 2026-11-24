@@ -39,7 +39,7 @@ These make an empty folder, go into it, and turn on a simple web server on port 
 ```
 curl 192.168.50.216
 ```
-I ran this about every 10 seconds. Each time, it asks Computer B's web server for a page, like malware checking in/beaconing
+I ran this about every 10 seconds. Each time, it asks Computer B's web server for a page, like malware checking in or like a beacon
  
 ![Check-ins](screenshots/02-check-ins.png)
  
