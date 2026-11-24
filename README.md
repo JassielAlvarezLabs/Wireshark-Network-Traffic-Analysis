@@ -52,3 +52,18 @@ I made Computer A "check in" with a fake C2 (Command and Control) server about e
 | `http` | Web requests and responses | 4 |
  
 ---
+
+## What's in This Repo
+ 
+```
+Wireshark-Network-Traffic-Analysis/
+├── README.md
+├── lab-01-baseline-traffic/
+├── lab-02-port-scan-detection/
+├── lab-03-cleartext-credentials/
+└── lab-04- Beaconing Detection/
+```
+ 
+Each lab folder has its own README with the steps and findings, and a `screenshots` folder.
+ 
+---
