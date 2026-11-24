@@ -25,6 +25,6 @@ dns
 DNS (Domain Name System) is how my computer asks for a website's IP address.
  
 <!-- TODO: name 2–3 websites you saw in the DNS lookups -->
-I saw lookups for: ______
+I saw lookups for: Discord.com, Claude.ai, Spotify.com, mozilla.cloudflare-dns.com as im using Firefox as a browser
  
 ![DNS lookups](screenshots/01-dns-lookups.png)
