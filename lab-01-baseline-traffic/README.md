@@ -52,3 +52,13 @@ I found all 3 between my computer (192.168.50.142:53680) and a server (172.64.15
 | 379 | 192.168.50.142 → 172.64.154.50 | **Client Hello** for `media.licdn.com` – the HTTPS part starts |
 
 ![TCP handshake](screenshots/02-tcp-handshake.png)
+
+## 4. Website Names on HTTPS
+```
+tls.handshake.type == 1
+```
+Even though HTTPS is encrypted, the **Client Hello** packet shows the website name (called the **SNI**, Server Name Indication).
+ 
+I found the name **media.licdn.com** (LinkedIn's content server).
+ 
+![TLS server name](screenshots/03-tls-server-name.png)
