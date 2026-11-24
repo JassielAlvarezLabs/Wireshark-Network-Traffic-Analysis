@@ -32,3 +32,12 @@ Nmap found these open ports: 135, 2179, 5357 and 8000
  
 ![Nmap scan](screenshots/01-nmap-scan.png)
 
+## 2. The Scan in Wireshark
+```
+ip.src == 192.168.50.216
+```
+This shows only packets from Computer B.
+ 
+I saw tons of **[SYN]** packets in the Info column, each one going to a **different port**. That's the nmap scan.
+
+![Scan packets](screenshots/02-scan-packets.png)
