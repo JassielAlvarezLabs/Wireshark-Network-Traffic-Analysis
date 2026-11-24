@@ -33,3 +33,14 @@ Using python
 The first command installs a small FTP server. The second one turns it on with a fake login, on port 21 (FTP).
  
 ![FTP server running](screenshots/01-ftp-server.png)
+
+---
+
+## 2. Log In (Computer A)
+With Wireshark recording, I connected to the server:
+```
+ftp 192.168.50.216
+```
+I typed the username `testuser` and password `testpass123`, then typed `bye` to log out.
+ 
+![FTP login](screenshots/02-ftp-login.png)
