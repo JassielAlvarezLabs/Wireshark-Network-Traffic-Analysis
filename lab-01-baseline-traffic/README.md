@@ -50,3 +50,5 @@ I found all 3 between my computer (192.168.50.142:53680) and a server (172.64.15
 | 377 | 172.64.154.50 → 192.168.50.142 | **SYN/ACK** (about 9 ms later) |
 | 378 | 192.168.50.142 → 172.64.154.50 | **ACK** – connection is open |
 | 379 | 192.168.50.142 → 172.64.154.50 | **Client Hello** for `media.licdn.com` – the HTTPS part starts |
+
+![TCP handshake](screenshots/02-tcp-handshake.png)
