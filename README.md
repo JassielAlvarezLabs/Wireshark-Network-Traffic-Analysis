@@ -28,3 +28,7 @@ I captured 60 seconds of normal browsing to learn what normal looks like: DNS lo
 ### [Lab 2: Port Scan](lab-02-port-scan-detection/)
 I scanned Computer A with Nmap from Computer B and caught it in Wireshark: one IP sending SYN packets to hundreds of different ports. Nmap found 4 open ports (135, 2179, 5357, 8000).
 **MITRE ATT&CK:** T1046 – Network Service Discovery
+
+### [Lab 3: Stolen Passwords](lab-03-cleartext-credentials/)
+I logged in to a test FTP server with a fake password and found the password in plain text in Wireshark, then read the whole login with Follow → TCP Stream.
+**MITRE ATT&CK:** T1040 – Network Sniffing
