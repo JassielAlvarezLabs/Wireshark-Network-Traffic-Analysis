@@ -77,3 +77,13 @@ My top 3 by **Total Packets**:
 | 209.85.231.177 | Google | 52,840 | ~116 s |
 | 18.64.174.117 | Amazon AWS | 28,078 | ~37 s |
 | 74.125.7.227 | Google | 18,122 | ~115 s |
+
+The servers I checked belonged to big, well-known companies like **Google**, and **Amazon AWS**.
+
+Went to **www.abuseipdb.com** to confirm these are valid IP addresses
+
+all 3 were from either Google server or Amazon server.
+
+![IP lookup](screenshots/05-GoogleIP.png)
+![IP lookup 2](screenshots/06-AmazonIP.png)
+![IP lookup 3](screenshots/07-GoogleIP2.png)
