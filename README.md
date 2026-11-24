@@ -36,3 +36,19 @@ I logged in to a test FTP server with a fake password and found the password in 
 ### [Lab 4: Beaconing Detection](lab-04-%20Beaconing%20Detection/)
 I made Computer A "check in" with a fake C2 (Command and Control) server about every 10 seconds, like malware does, then caught the regular timing and the non-browser User-Agent in Wireshark.
 **MITRE ATT&CK:** T1071.001 – Application Layer Protocol: Web Protocols
+
+
+
+## Filters I Used
+ 
+| Filter | What it shows | Lab |
+|---|---|---|
+| `ip.addr == 192.168.50.142` | Only Computer A's traffic | 1 |
+| `dns` | Website name lookups | 1 |
+| `tcp.flags.syn == 1` | Connection starts (SYN, SYN/ACK) | 1 |
+| `tls.handshake.type == 1` | Website names in HTTPS traffic | 1 |
+| `ip.src == 192.168.50.216` | Only packets from Computer B | 2 |
+| `ftp` | FTP logins and commands | 3 |
+| `http` | Web requests and responses | 4 |
+ 
+---
