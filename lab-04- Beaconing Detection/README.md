@@ -44,3 +44,34 @@ I ran this about every 10 seconds. Each time, it asks Computer B's web server fo
 ![Check-ins](screenshots/02-check-ins.png)
  
 ---
+
+## 3. Regular Timing
+```
+http
+```
+This shows only HTTP (HyperText Transfer Protocol) traffic.
+ 
+To see the time between check-ins, I changed: **View → Time Display Format → Seconds Since Previous Displayed Packet**.
+ 
+I found **11** `GET /` requests from 192.168.50.142 to 192.168.50.216. After the first one, they came about **every 10 seconds** (between 9.5 and 12.5 seconds), and the server answered each one with `200 OK`.
+ 
+![Beacon timing](screenshots/lab4/03-beacon-timing.png)
+ 
+---
+
+## 4. Not a Real Browser
+Every request had the User-Agent **`curl/8.22.0`**. A real web browser says "Mozilla...", so this traffic came from a **program, not a person**.
+ 
+![User-Agent](screenshots/04-user-agent.png)
+
+---
+ 
+## Signs of Beaconing
+- The same computer contacting the same server over and over
+- Check-ins at regular times (about every 10 seconds)
+- A User-Agent that isn't a browser (`curl`)
+- Small requests and responses that are about the same size each time
+  
+> **Note:** Real malware often adds random timing, called **jitter**, to look less obvious. The small differences in my lab (9.5–12.5 seconds) show why analysts look for *mostly* regular patterns, not perfect ones.
+ 
+---
