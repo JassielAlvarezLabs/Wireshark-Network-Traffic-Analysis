@@ -32,3 +32,7 @@ I scanned Computer A with Nmap from Computer B and caught it in Wireshark: one I
 ### [Lab 3: Stolen Passwords](lab-03-cleartext-credentials/)
 I logged in to a test FTP server with a fake password and found the password in plain text in Wireshark, then read the whole login with Follow → TCP Stream.
 **MITRE ATT&CK:** T1040 – Network Sniffing
+
+### [Lab 4: Beaconing Detection](lab-04-%20Beaconing%20Detection/)
+I made Computer A "check in" with a fake C2 (Command and Control) server about every 10 seconds, like malware does, then caught the regular timing and the non-browser User-Agent in Wireshark.
+**MITRE ATT&CK:** T1071.001 – Application Layer Protocol: Web Protocols
