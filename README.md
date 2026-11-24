@@ -12,3 +12,15 @@ A home lab I built to learn how a SOC analyst reads network traffic. I used two 
 |---|---|---|
 | Wireshark computer | Computer A (`JayPC`) | 192.168.50.142 |
 | "Attacker" / server | Computer B | 192.168.50.216 |
+
+```
+ Computer B  (scan, FTP login, check-ins) | Computer A (Wireshark)(web traffic) Internet
+ 192.168.50.216                                  192.168.50.142
+```
+ 
+---
+ 
+## Labs
+
+### [Lab 1: Normal Traffic](lab-01-baseline-traffic/)
+I captured 60 seconds of normal browsing to learn what normal looks like: DNS lookups, the TCP handshake, website names in HTTPS traffic, and who my computer talked to the most. I checked the top IPs on AbuseIPDB.
