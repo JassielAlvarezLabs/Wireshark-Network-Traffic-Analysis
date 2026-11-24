@@ -13,3 +13,21 @@ Learn how to catch someone checking my computer's Ports
 |---|---|
 | Computer A (Wireshark, the target) | 192.168.50.142 |
 | Computer B (Nmap, the "attacker") | 192.168.50.216 |
+
+---
+
+## What I Did
+I started a Wireshark capture on Computer A. Then on Computer B, I opened Command Prompt as administrator and ran an Nmap scan against Computer A. After the scan finished, I stopped the capture.
+
+---
+ 
+## 1. The Nmap Scan
+```
+nmap 192.168.50.142
+```
+This checks the 1,000 most common ports on Computer A. Because I ran it as administrator, Nmap uses a **SYN scan**: it sends a SYN to each port but never finishes the handshake.
+ 
+<!-- TODO: list what Nmap found -->
+Nmap found these open ports: ______
+ 
+![Nmap scan](screenshots/lab2/01-nmap-scan.png)
