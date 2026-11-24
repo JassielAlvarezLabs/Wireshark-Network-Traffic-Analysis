@@ -87,3 +87,14 @@ all 3 were from either Google server or Amazon server.
 ![IP lookup](screenshots/05-GoogleIP.png)
 ![IP lookup 2](screenshots/06-AmazonIP.png)
 ![IP lookup 3](screenshots/07-GoogleIP2.png)
+
+## What Normal Looks Like
+- DNS lookup first, then a connection to that website
+- Every connection starts with SYN → SYN/ACK → ACK
+- Traffic goes to well-known companies on port 443 (HTTPS)
+
+## What I Learned
+- How to filter traffic in Wireshark
+- How DNS, the TCP handshake, and the TLS Client Hello work
+- How to find the busiest connections with Statistics → Conversations
+- How to verify IP addresses using **www.abuseipdb.com**
