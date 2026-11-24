@@ -28,6 +28,6 @@ nmap 192.168.50.142
 This checks the 1,000 most common ports on Computer A. Because I ran it as administrator, Nmap uses a **SYN scan**: it sends a SYN to each port but never finishes the handshake.
  
 <!-- TODO: list what Nmap found -->
-Nmap found these open ports: ______
+Nmap found these open ports: 135, 2179, 5357 and 8000
  
 ![Nmap scan](screenshots/lab2/01-nmap-scan.png)
