@@ -34,3 +34,13 @@ These make an empty folder, go into it, and turn on a simple web server on port 
 ![C2 server](screenshots/01-c2-server.png)
  
 ---
+
+## 2. Fake Malware Check-Ins (Computer A)
+```
+curl 192.168.50.216
+```
+I ran this about every 10 seconds. Each time, it asks Computer B's web server for a page, like malware checking in/beaconing
+ 
+![Check-ins](screenshots/02-check-ins.png)
+ 
+---
