@@ -33,6 +33,9 @@ I saw lookups for: Discord.com, Claude.ai, Spotify.com, mozilla.cloudflare-dns.c
 ```
 tcp.flags.syn == 1
 ```
+This filter allows me to see the SYN or SYN-ACK packets that were sent.
+but I cant see ACK packets since the SYN flag is turned off.
+
 Every TCP (Transmission Control Protocol) connection starts with 3 packets:
  
 1. **SYN** – my computer: "I want to connect"
